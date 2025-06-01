@@ -1,0 +1,35 @@
+@import "variables", "fonts", "reset";
+
+*{
+    font-family: $kor;
+    color: $text-black;
+}
+body{
+    font-size: 15px;
+    margin: 0;
+}
+
+/* HTML Contents hide */
+// header,
+.slide-banner,
+.korea-tshirts,
+.shorts-pants,
+.cove-sandle,
+.nb-tshirts,
+.frozen-cloth,
+.weekly-best,
+.nb-category,
+footer{
+    display: none;
+}
+
+/*########### common CSS ###########*/
+section:not(.slide-banner){
+    padding: 40px 0;
+}
+[class*=inner]{
+    width: 100%;
+    padding: 0 55px;
+}
+
+/*########### Header ###########*/
