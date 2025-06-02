@@ -4,14 +4,294 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./script/custom.js"></script>
+    <!-- Favicon icon -->
     <link rel="icon" href="./images/favicon.ico">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- CSS StyleSheet -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="content-main-page">
         <!-- Header -->
         <header>
-            <div class="header-inner"></div>
-            <div class="mega-navi"></div>
+            <div class="header-menu">
+                <div class="header-menu-sub">
+                    <div class="header-menu-sub-inner">
+                        <div class="about-nb">
+                        <a href="#none" class="nb-country">
+                        <img src="./images/logo-made.png" alt="미국과 영국에서의 뉴발란스 역사">
+                        </a>
+                        <a href="#none" class="mynb">
+                            <img src="./images/logo-mynb.png" alt="뉴발란스의 커뮤니티 앱 MyNB">
+                        </a>
+                        </div>
+                        <div class="help-nb">
+                            <a href="#none">매장찾기</a>
+                            <a href="#none">공지사항</a>
+                            <a href="#none">FAQS</a>
+                            <a href="#none">이벤트</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-menu-main">
+                    <div class="header-menu-main-inner">
+                        <div class="logo-gnb">
+                            <h1 class="logo">
+                            <a href="#none">
+                                <img src="./images/logo.png" alt="뉴발란스 로고 이미지">
+                            </a>
+                            <span class="hide">뉴발란스</span>
+                            </h1>
+                            <div class="gnb">
+                                <a href="#none" class="man">
+                                    <span>Men</span>
+                                </a>
+                                <a href="#none" class="woman">
+                                    <span>Women</span>
+                                </a>
+                                <a href="#none" class="kids">
+                                    <span>Kids</span>
+                                </a>
+                                <a href="#none" class="launching">
+                                    <span>런칭캘린더</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="search-login-cart">
+                            <div class="search">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <div class="login-count">
+                                <i class="bi bi-person-circle"></i>
+                                <a href="#none"><span>로그인</span></a>
+                                <a href="#none"><span>회원가입</span></a>
+                            </div>
+                            <div class="cart">
+                                <a href="#none">
+                                <i class="bi bi-bag-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mega-navi">
+                <div class="mega-navi-inner man">
+                    <div class="mega-navi-item">
+                        <b>Featured</b>
+                        <a href="#none">New</a>
+                        <a href="#none">Best</a>
+                        <a href="#none">초경량 바람막이</a>
+                        <a href="#none">코리아 익스클루시브 재입고</a>
+                        <a href="#none">1906W 팬텀핏</a>
+                        <a href="#none">시원한 썸머 메쉬 신발</a>
+                        <a href="#none">Grey Days</a>
+                        <a href="#none">MADE</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>신발</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">Made in USA/UK</a>
+                        <a href="#none">라이프스타일</a>
+                        <a href="#none">740</a>
+                        <a href="#none">1906</a>
+                        <a href="#none">530</a>
+                        <a href="#none">2002</a>
+                        <a href="#none">슬라이드/샌들</a>
+                        <a href="#none">러닝</a>
+                        <a href="#none">트레일</a>
+                        <a href="#none">워킹</a>
+                        <a href="#none">골프</a>
+                        <a href="#none">농구</a>
+                        <a href="#none">축구</a>
+                        <a href="#none">야구/테니스</a>
+                        <a href="#none">스케이트보딩</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>의류</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">반팔티셔츠</a>
+                        <a href="#none">바람막이/자켓</a>
+                        <a href="#none">슬리브리스</a>
+                        <a href="#none">폴로티</a>
+                        <a href="#none">후드티/맨투맨</a>
+                        <a href="#none">긴팔티셔츠</a>
+                        <a href="#none">숏팬츠</a>
+                        <a href="#none">롱팬츠</a>
+                        <a href="#none">슬랙스</a>
+                        <a href="#none">언더웨어</a>
+                        <a href="#none">러닝</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>용품</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">백팩</a>
+                        <a href="#none">가방</a>
+                        <a href="#none">양말</a>
+                        <a href="#none">모자</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>러닝</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">나만의 러닝화 찾기</a>
+                        <a href="#none">1080 V14 (쿠셔닝화)</a>
+                        <a href="#none">레벨 V4 (데일리화)</a>
+                        <a href="#none">SC 트레이너 V3 (장거리화)</a>
+                        <a href="#none">SC 엘리트 V4 (레이싱화)</a>
+                        <a href="#none">러닝 상의</a>
+                        <a href="#none">러닝 하의</a>
+                        <a href="#none">러닝용품</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>스포츠</b>
+                        <a href="#none">RUNNING</a>
+                        <a href="#none">TEAM SPORTS</a>
+                        <a href="#none">KT WIZ</a>
+                        <a href="#none">STUDIO</a>
+                    </div>
+                </div>
+                <div class="mega-navi-inner woman">
+                    <div class="mega-navi-item">
+                        <b>Featured</b>
+                        <a href="#none">New</a>
+                        <a href="#none">Best</a>
+                        <a href="#none">초경량 바람막이</a>
+                        <a href="#none">코리아 익스클루시브 재입고</a>
+                        <a href="#none">1906W 팬텀핏</a>
+                        <a href="#none">시원한 썸머 메쉬 신발</a>
+                        <a href="#none">Grey Days</a>
+                        <a href="#none">MADE</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>신발</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">Made in USA/UK</a>
+                        <a href="#none">라이프스타일</a>
+                        <a href="#none">740</a>
+                        <a href="#none">1906</a>
+                        <a href="#none">530</a>
+                        <a href="#none">2002</a>
+                        <a href="#none">슬라이드/샌들</a>
+                        <a href="#none">러닝</a>
+                        <a href="#none">트레일</a>
+                        <a href="#none">워킹</a>
+                        <a href="#none">골프</a>
+                        <a href="#none">스튜디오/테니스</a>
+                        <a href="#none">스케이트보딩</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>의류</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">반팔티셔츠</a>
+                        <a href="#none">바람막이/자켓</a>
+                        <a href="#none">슬리브리스</a>
+                        <a href="#none">후드티/맨투맨</a>
+                        <a href="#none">긴팔티셔츠</a>
+                        <a href="#none">숏팬츠</a>
+                        <a href="#none">롱팬츠</a>
+                        <a href="#none">스커트/원피스</a>
+                        <a href="#none">레깅스</a>
+                        <a href="#none">브라탑</a>
+                        <a href="#none">언더웨어</a>
+                        <a href="#none">러닝</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>용품</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">백팩</a>
+                        <a href="#none">가방</a>
+                        <a href="#none">양말</a>
+                        <a href="#none">모자</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>러닝</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">나만의 러닝화 찾기</a>
+                        <a href="#none">1080 V14 (쿠셔닝화)</a>
+                        <a href="#none">레벨 V4 (데일리화)</a>
+                        <a href="#none">SC 트레이너 V3 (장거리화)</a>
+                        <a href="#none">SC 엘리트 V4 (레이싱화)</a>
+                        <a href="#none">러닝 상의</a>
+                        <a href="#none">러닝 하의</a>
+                        <a href="#none">러닝용품</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>스포츠</b>
+                        <a href="#none">RUNNING</a>
+                        <a href="#none">TEAM SPORTS</a>
+                        <a href="#none">KT WIZ</a>
+                        <a href="#none">STUDIO</a>
+                    </div>
+                </div>
+                <div class="mega-navi-inner kids">
+                    <div class="mega-navi-item">
+                        <b>Featured</b>
+                        <a href="#none">New</a>
+                        <a href="#none">Best</a>
+                        <a href="#none">런칭캘린더</a>
+                        <a href="#none">멤버스위크 공동구매</a>
+                        <a href="#none">여름 기능성 티셔츠</a>
+                        <a href="#none">숲체험 가요</a>
+                        <a href="#none">가볍게 쓱! 썸머팬츠</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>신발</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">INF(130~160mm)</a>
+                        <a href="#none">PRE(170~220mm)</a>
+                        <a href="#none">GRA(225~240mm)</a>
+                        <a href="#none">New-b (100~130mm)</a>
+                        <a href="#none">샌들</a>
+                        <a href="#none">FREEDLE 920</a>
+                        <a href="#none">530</a>
+                        <a href="#none">740</a>
+                        <a href="#none">1906</a>
+                        <a href="#none">990</a>
+                        <a href="#none">러닝</a>
+                        <a href="#none">축구화/풋살화</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>의류</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">프리스쿨(100-140size)</a>
+                        <a href="#none">스쿨키즈(140-160size)</a>
+                        <a href="#none">반팔 티셔츠</a>
+                        <a href="#none">숏팬츠</a>
+                        <a href="#none">상하의 셋업</a>
+                        <a href="#none">바람막이</a>
+                        <a href="#none">긴팔 티셔츠</a>
+                        <a href="#none">롱팬츠</a>
+                        <a href="#none">후드티/맨투맨</a>
+                        <a href="#none">래쉬가드</a>
+                        <a href="#none">스커트/레깅스</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>용품</b>
+                        <a href="#none">전체보기</a>
+                        <a href="#none">모자</a>
+                        <a href="#none">양말</a>
+                        <a href="#none">가방</a>
+                        <a href="#none">백팩</a>
+                        <a href="#none">사이드 백</a>
+                        <a href="#none">미니미가방</a>
+                        <a href="#none">ACC</a>
+                    </div>
+                    <div class="mega-navi-item">
+                        <b>연중판매</b>
+                        <a href="#none">첫 걸음마 신발</a>
+                        <a href="#none">Essential Basic</a>
+                        <a href="#none">Swim Item</a>
+                        <a href="#none">NBSC Sports Club</a>
+                        <a href="#none">ii NBgC Sporty & Girls</a>
+                        <a href="#none">단체 구매 서비스</a>
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- Slide-Banner -->
         <section class="slide-banner">

@@ -1,4 +1,4 @@
-@import "variables", "fonts", "reset";
+@import "variables.scss", "fonts.scss", "reset.scss";
 
 *{
     font-family: $kor;
@@ -33,3 +33,164 @@ section:not(.slide-banner){
 }
 
 /*########### Header ###########*/
+header{
+    width: 100%;
+    position: relative;
+    .header-menu{
+        .header-menu-sub{
+            padding: 9px 0;
+            background-color: $top-sub-bg;
+            .header-menu-sub-inner{
+                display: flex;
+                justify-content: space-between;
+                .about-nb{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    .nb-country::after{
+                        content: '|';
+                        display: inline-block;
+                        color: rgba($text-black, 0.2);
+                        transform: translateY(-4px);
+                        margin-left: 18px;
+                    }
+                }
+                .help-nb{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    a{
+                        font-size: 13px;
+                        &:last-child::after{
+                            display: none;
+                        }
+                        &::after{
+                        content: '|';
+                        display: inline-block;
+                        color: rgba($text-black, 0.2);
+                        transform: translateY(-2px);
+                        margin-left: 8px;
+                    }
+                    }
+                }
+            }
+        }
+        .header-menu-main{
+            padding: 9px 0;
+            .header-menu-main-inner{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .logo-gnb{
+                    display: flex;
+                    align-items: center;
+                    gap: 45px;
+                    .gnb{
+                        display: flex;
+                        height: 100%;
+                        a{
+                            flex: 1;
+                            padding: 23px 0;
+                            margin: 0 25px;
+                            max-width: fit-content;
+                            span{
+                                font-family: $Eng-1st;
+                                font-size: 16px;
+                                font-weight: 600;
+                                letter-spacing: -1px;
+                            }
+                            &:last-child>span{
+                                color: $text-red;
+                            }
+                        }
+                    }
+                }
+                .search-login-cart{
+                    display: flex;
+                    align-items: center;
+                    gap: 32px;
+                    .search{
+                        cursor: pointer;
+                        .bi{
+                            font-size: 30px;
+                        }
+                    }
+                    .login-count{
+                        display: flex;
+                        align-items: center;
+                        gap: 16px;
+                        .bi{
+                            font-size: 30px;
+                            cursor: pointer;
+                        }
+                        a{
+                            position: relative;
+                            &:first-of-type::after{
+                                content: '|';
+                                position: absolute;
+                                display: inline-block;
+                                color: rgba($text-black, 0.4);
+                                font-size: 12px;
+                                transform: translateY(1px);
+                                margin-left: 6px;
+                            }
+                        }
+                    }
+                    .cart{
+                        a{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mega-navi{
+        position: absolute;
+        width: 100%;
+        border: 1px solid $text-red;
+        .mega-navi-inner{
+            display: none;
+            padding: 0 185px;
+            &.action{
+                display: flex;
+                gap: 5px;
+            }
+            .mega-navi-item{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                width: 18vh;
+                padding: 24px 0;
+                &>*{
+                    display: inline-block;
+                    width: fit-content;
+                    font-size: 14px;
+                    margin: 5px 0;
+                }
+                &:not(:first-child){
+                    padding-left: 30px;
+                }
+                &:first-child::after{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 95%;
+                    border-right: 1px solid rgba($text-black, 0.2);
+                }
+                &:last-child::before{
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 95%;
+                    border-right: 1px solid rgba($text-black, 0.2);
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+@font-face {
+  font-family: "HakgyoansimBareondotumB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimBareondotumB.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}

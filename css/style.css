@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+@font-face {
+  font-family: "HakgyoansimBareondotumB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimBareondotumB.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 500;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+}
+
+.hide {
+  display: block;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  transform: translate(-1px, -1px);
+}
+
+* {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #141414;
+}
+
+body {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* HTML Contents hide */
+.slide-banner,
+.korea-tshirts,
+.shorts-pants,
+.cove-sandle,
+.nb-tshirts,
+.frozen-cloth,
+.weekly-best,
+.nb-category,
+footer {
+  display: none;
+}
+
+/*########### common CSS ###########*/
+section:not(.slide-banner) {
+  padding: 40px 0;
+}
+
+[class*=inner] {
+  width: 100%;
+  padding: 0 55px;
+}
+
+/*########### Header ###########*/
+header {
+  width: 100%;
+  position: relative;
+}
+header .header-menu .header-menu-sub {
+  padding: 9px 0;
+  background-color: #e5e5e5;
+}
+header .header-menu .header-menu-sub .header-menu-sub-inner {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-menu .header-menu-sub .header-menu-sub-inner .about-nb {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+header .header-menu .header-menu-sub .header-menu-sub-inner .about-nb .nb-country::after {
+  content: "|";
+  display: inline-block;
+  color: rgba(20, 20, 20, 0.2);
+  transform: translateY(-4px);
+  margin-left: 18px;
+}
+header .header-menu .header-menu-sub .header-menu-sub-inner .help-nb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .header-menu .header-menu-sub .header-menu-sub-inner .help-nb a {
+  font-size: 13px;
+}
+header .header-menu .header-menu-sub .header-menu-sub-inner .help-nb a:last-child::after {
+  display: none;
+}
+header .header-menu .header-menu-sub .header-menu-sub-inner .help-nb a::after {
+  content: "|";
+  display: inline-block;
+  color: rgba(20, 20, 20, 0.2);
+  transform: translateY(-2px);
+  margin-left: 8px;
+}
+header .header-menu .header-menu-main {
+  padding: 9px 0;
+}
+header .header-menu .header-menu-main .header-menu-main-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb {
+  display: flex;
+  height: 100%;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb a {
+  flex: 1;
+  padding: 23px 0;
+  margin: 0 25px;
+  max-width: fit-content;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb a span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -1px;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb a:last-child > span {
+  color: #cf0a2c;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart .search {
+  cursor: pointer;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart .search .bi {
+  font-size: 30px;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart .login-count {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart .login-count .bi {
+  font-size: 30px;
+  cursor: pointer;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart .login-count a {
+  position: relative;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart .login-count a:first-of-type::after {
+  content: "|";
+  position: absolute;
+  display: inline-block;
+  color: rgba(20, 20, 20, 0.4);
+  font-size: 12px;
+  transform: translateY(1px);
+  margin-left: 6px;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart .cart a {
+  font-size: 30px;
+}
+header .mega-navi {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #cf0a2c;
+}
+header .mega-navi .mega-navi-inner {
+  display: none;
+  padding: 0 185px;
+}
+header .mega-navi .mega-navi-inner.action {
+  display: flex;
+  gap: 5px;
+}
+header .mega-navi .mega-navi-inner .mega-navi-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 18vh;
+  padding: 24px 0;
+}
+header .mega-navi .mega-navi-inner .mega-navi-item > * {
+  display: inline-block;
+  width: fit-content;
+  font-size: 14px;
+  margin: 5px 0;
+}
+header .mega-navi .mega-navi-inner .mega-navi-item:not(:first-child) {
+  padding-left: 30px;
+}
+header .mega-navi .mega-navi-inner .mega-navi-item:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 95%;
+  border-right: 1px solid rgba(20, 20, 20, 0.2);
+}
+header .mega-navi .mega-navi-inner .mega-navi-item:last-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 95%;
+  border-right: 1px solid rgba(20, 20, 20, 0.2);
+}
+header .mega-navi .mega-navi-inner .mega-navi-item a:hover {
+  text-decoration: underline;
+}

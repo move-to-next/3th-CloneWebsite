@@ -16,3 +16,10 @@ button{
 input{
     border: none;
 }
+.hide{
+    display: block;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    transform: translate(-1px,-1px);
+}
