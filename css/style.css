@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @font-face {
   font-family: "HakgyoansimBareondotumB";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimBareondotumB.woff2") format("woff2");
@@ -87,19 +88,21 @@ header .header-menu .header-menu-sub .header-menu-sub-inner {
 header .header-menu .header-menu-sub .header-menu-sub-inner .about-nb {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 header .header-menu .header-menu-sub .header-menu-sub-inner .about-nb .nb-country::after {
   content: "|";
+  position: absolute;
   display: inline-block;
   color: rgba(20, 20, 20, 0.2);
   transform: translateY(-4px);
-  margin-left: 18px;
+  margin-left: 16px;
+  cursor: none;
 }
 header .header-menu .header-menu-sub .header-menu-sub-inner .help-nb {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 18px;
 }
 header .header-menu .header-menu-sub .header-menu-sub-inner .help-nb a {
   font-size: 13px;
@@ -109,7 +112,9 @@ header .header-menu .header-menu-sub .header-menu-sub-inner .help-nb a:last-chil
 }
 header .header-menu .header-menu-sub .header-menu-sub-inner .help-nb a::after {
   content: "|";
+  position: absolute;
   display: inline-block;
+  cursor: none;
   color: rgba(20, 20, 20, 0.2);
   transform: translateY(-2px);
   margin-left: 8px;
@@ -136,6 +141,7 @@ header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb a {
   padding: 23px 0;
   margin: 0 25px;
   max-width: fit-content;
+  position: relative;
 }
 header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb a span {
   font-family: "Montserrat", sans-serif;
@@ -143,8 +149,38 @@ header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb a s
   font-weight: 600;
   letter-spacing: -1px;
 }
-header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb a:last-child > span {
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb a::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-bottom: 3px solid #cf0a2c;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb a:hover::after {
+  display: block;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb .launching {
+  position: relative;
+  flex: 1;
+  padding: 23px 0;
+  margin: 0 25px;
+  max-width: fit-content;
+  cursor: pointer;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb .launching span {
   color: #cf0a2c;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb .launching::after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-bottom: 3px solid #cf0a2c;
+}
+header .header-menu .header-menu-main .header-menu-main-inner .logo-gnb .gnb .launching:hover::after {
+  display: block;
 }
 header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart {
   display: flex;
@@ -173,6 +209,7 @@ header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart
   content: "|";
   position: absolute;
   display: inline-block;
+  cursor: none;
   color: rgba(20, 20, 20, 0.4);
   font-size: 12px;
   transform: translateY(1px);
@@ -184,7 +221,6 @@ header .header-menu .header-menu-main .header-menu-main-inner .search-login-cart
 header .mega-navi {
   position: absolute;
   width: 100%;
-  border: 1px solid #cf0a2c;
 }
 header .mega-navi .mega-navi-inner {
   display: none;

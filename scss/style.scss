@@ -46,19 +46,21 @@ header{
                 .about-nb{
                     display: flex;
                     align-items: center;
-                    gap: 20px;
+                    gap: 30px;
                     .nb-country::after{
                         content: '|';
+                        position: absolute;
                         display: inline-block;
                         color: rgba($text-black, 0.2);
                         transform: translateY(-4px);
-                        margin-left: 18px;
+                        margin-left: 16px;
+                        cursor: none;
                     }
                 }
                 .help-nb{
                     display: flex;
                     align-items: center;
-                    gap: 8px;
+                    gap: 18px;
                     a{
                         font-size: 13px;
                         &:last-child::after{
@@ -66,7 +68,9 @@ header{
                         }
                         &::after{
                         content: '|';
+                        position: absolute;
                         display: inline-block;
+                        cursor: none;
                         color: rgba($text-black, 0.2);
                         transform: translateY(-2px);
                         margin-left: 8px;
@@ -93,14 +97,45 @@ header{
                             padding: 23px 0;
                             margin: 0 25px;
                             max-width: fit-content;
+                            position: relative;
                             span{
                                 font-family: $Eng-1st;
                                 font-size: 16px;
                                 font-weight: 600;
                                 letter-spacing: -1px;
                             }
-                            &:last-child>span{
+                            &::after{
+                                content: '';
+                                display: none;
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0;
+                                border-bottom: 3px solid $text-red;
+                            }
+                            &:hover::after{
+                                display: block;
+                            }
+                        }
+                        .launching{
+                            position: relative;
+                            flex: 1;
+                            padding: 23px 0;
+                            margin: 0 25px;
+                            max-width: fit-content;
+                            cursor: pointer;
+                            span{
                                 color: $text-red;
+                            }
+                            &::after{
+                                content: '';
+                                display: none;
+                                position: absolute;
+                                width: 100%;
+                                bottom: 0;
+                                border-bottom: 3px solid $text-red;
+                            }
+                            &:hover::after{
+                                display: block;
                             }
                         }
                     }
@@ -129,6 +164,7 @@ header{
                                 content: '|';
                                 position: absolute;
                                 display: inline-block;
+                                cursor: none;
                                 color: rgba($text-black, 0.4);
                                 font-size: 12px;
                                 transform: translateY(1px);
@@ -148,7 +184,7 @@ header{
     .mega-navi{
         position: absolute;
         width: 100%;
-        border: 1px solid $text-red;
+        // border: 1px solid $text-red;
         .mega-navi-inner{
             display: none;
             padding: 0 185px;
