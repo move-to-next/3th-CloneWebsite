@@ -2,7 +2,7 @@
 
 *{
     font-family: $kor;
-    color: $text-black;
+    color: $black;
 }
 body{
     font-size: 15px;
@@ -11,7 +11,7 @@ body{
 
 /* HTML Contents hide */
 // header,
-.slide-banner,
+// .slide-banner,
 .korea-tshirts,
 .shorts-pants,
 .cove-sandle,
@@ -30,6 +30,53 @@ section:not(.slide-banner){
 [class*=inner]{
     width: 100%;
     padding: 0 55px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0;
+    .title{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        &>*{
+            display: block;
+            user-select: none;
+        }
+        b{
+            font-family: $Eng-1st;
+            font-size: 40px;
+        }
+        span{
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    @at-root .btns{
+        margin-top:40px;
+        display: flex;
+        gap: 15px;
+        button.btn-style{
+            flex: 1;
+            background-color: #fff;
+            border: 1px solid $black;
+            border-radius: 5px;
+            padding: 12px 24px;
+            span{
+                display: inline-block;
+                min-width: 80px;
+                font-size: 16px;
+            }
+            &:last-child{
+                background-color: $black;
+                span{
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
 
 /*########### Header ###########*/
@@ -51,7 +98,7 @@ header{
                         content: '|';
                         position: absolute;
                         display: inline-block;
-                        color: rgba($text-black, 0.2);
+                        color: rgba($black, 0.2);
                         transform: translateY(-4px);
                         margin-left: 16px;
                         cursor: none;
@@ -71,7 +118,7 @@ header{
                         position: absolute;
                         display: inline-block;
                         cursor: none;
-                        color: rgba($text-black, 0.2);
+                        color: rgba($black, 0.2);
                         transform: translateY(-2px);
                         margin-left: 8px;
                     }
@@ -110,7 +157,7 @@ header{
                                 position: absolute;
                                 width: 100%;
                                 bottom: 0;
-                                border-bottom: 3px solid $text-red;
+                                border-bottom: 3px solid $red;
                             }
                             &:hover::after{
                                 display: block;
@@ -124,7 +171,7 @@ header{
                             max-width: fit-content;
                             cursor: pointer;
                             span{
-                                color: $text-red;
+                                color: $red;
                             }
                             &::after{
                                 content: '';
@@ -132,7 +179,7 @@ header{
                                 position: absolute;
                                 width: 100%;
                                 bottom: 0;
-                                border-bottom: 3px solid $text-red;
+                                border-bottom: 3px solid $red;
                             }
                             &:hover::after{
                                 display: block;
@@ -165,7 +212,7 @@ header{
                                 position: absolute;
                                 display: inline-block;
                                 cursor: none;
-                                color: rgba($text-black, 0.4);
+                                color: rgba($black, 0.4);
                                 font-size: 12px;
                                 transform: translateY(1px);
                                 margin-left: 6px;
@@ -184,7 +231,7 @@ header{
     .mega-navi{
         position: absolute;
         width: 100%;
-        // border: 1px solid $text-red;
+        // border: 1px solid $red;
         .mega-navi-inner{
             display: none;
             padding: 0 185px;
@@ -213,7 +260,7 @@ header{
                     top: 0;
                     right: 0;
                     height: 95%;
-                    border-right: 1px solid rgba($text-black, 0.2);
+                    border-right: 1px solid rgba($black, 0.2);
                 }
                 &:last-child::before{
                     content: '';
@@ -221,10 +268,63 @@ header{
                     top: 0;
                     left: 0;
                     height: 95%;
-                    border-right: 1px solid rgba($text-black, 0.2);
+                    border-right: 1px solid rgba($black, 0.2);
                 }
                 a:hover{
                     text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+/*########### Slide-banner ###########*/
+.slide-banner{
+    .slide-banner-inner{
+        overflow: hidden;
+        .slide-banner-items{
+            display: flex;
+            gap: 55px;
+            z-index: 50;
+            .slick-next,
+            .slick-prev{
+                top: 38%;
+                padding: 24px;
+                display: flex;
+                background-color: #fff;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                opacity: 70%;
+                z-index: 51;
+            }
+            .slick-prev{
+                transform: translateX(40px);
+            }
+            .slick-next{
+                transform: translateX(-40px);
+            }
+            .slick-next:before,
+            .slick-prev:before{
+                display: inline-block;
+                content: '\F285';
+                font-family: $bs-font;
+                font-size: 18px;
+                font-weight: 700;
+                color: $black;
+                z-index: 51;
+            }
+            .slick-prev:before{
+                transform: rotateY(180deg);
+            }
+            .slide-banner-item{
+                .slide-item-wrap{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .pic{
+                        cursor: pointer;
+                    }
                 }
             }
         }

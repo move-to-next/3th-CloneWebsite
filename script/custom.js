@@ -1,19 +1,13 @@
 $(function(){
-    let gnb = $(".logo-gnb > .gnb > a"); 
-    let mega = $(".mega-navi > .mega-navi-inner");  
-
-    gnb.each(function(index, item){
-        $(item).on("mouseover", function(){
-            $(this).addClass('action');
-            mega.removeClass('action');
-            
-            let gnbActIndex = gnb.index($(this));
-            if(gnbActIndex < mega.length){
-                mega.eq(gnbActIndex).addClass('action');
-            }
-        })
-        $(item).on("mouseleave",function(){
-            mega.removeClass('action');
-        })
-    })
+    /* Front Slider */
+    $('.slide-banner-items').slick({
+        infinite: true,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        fade: true,
+        speed: 500,
+        pauseOnHover: false
+    });
 })
