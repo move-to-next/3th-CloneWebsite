@@ -50,7 +50,6 @@ body {
 }
 
 /* HTML Contents hide */
-.shorts-pants,
 .cove-sandle,
 .nb-tshirts,
 .frozen-cloth,
@@ -361,14 +360,13 @@ header .mega-navi .mega-navi-inner .mega-navi-item a:hover {
   cursor: pointer;
 }
 
-/*########### Slide-banner ###########*/
+/*########### Korea-Tshirts ###########*/
 .korea-tshirts {
   margin-top: 10vh;
 }
 .korea-tshirts .korea-tshirts-inner {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 40px;
 }
 .korea-tshirts .korea-tshirts-inner .title {
@@ -442,6 +440,99 @@ header .mega-navi .mega-navi-inner .mega-navi-item a:hover {
   margin-top: 50px;
 }
 .korea-tshirts .korea-tshirts-inner .contents .btn-style span {
+  display: inline-block;
+  min-width: 80px;
+  font-size: 16px;
+}
+
+/*########### Shorts-Pants ###########*/
+.shorts-pants {
+  margin-top: 10vh;
+}
+.shorts-pants .shorts-pants-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.shorts-pants .shorts-pants-inner .title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.shorts-pants .shorts-pants-inner .title > * {
+  display: block;
+  user-select: none;
+}
+.shorts-pants .shorts-pants-inner .title b {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+.shorts-pants .shorts-pants-inner .title span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.shorts-pants .shorts-pants-inner .contents {
+  position: relative;
+  width: 100%;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items .slick-list {
+  margin: 0 -12px;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items .slick-slide {
+  margin: 0 12px;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items .shorts-pants-item {
+  flex: 1;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items .shorts-pants-item .thum {
+  position: relative;
+  height: 0;
+  padding-top: 120%;
+  border-radius: 5px;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items .shorts-pants-item .thum img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items .shorts-pants-item .overview {
+  margin-top: 40px;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items .shorts-pants-item .overview > * {
+  display: block;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items .shorts-pants-item .overview span.name {
+  font-size: 18px;
+  font-weight: 400;
+}
+.shorts-pants .shorts-pants-inner .contents .shorts-pants-items .shorts-pants-item .overview span.price {
+  font-family: "KHNPHD";
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 8px;
+}
+.shorts-pants .shorts-pants-inner .contents button.btn-style {
+  display: block;
+  margin: auto;
+  flex: 1;
+  background-color: #fff;
+  border: 1px solid #141414;
+  border-radius: 5px;
+  padding: 12px 24px;
+  margin-top: 50px;
+}
+.shorts-pants .shorts-pants-inner .contents button.btn-style span {
   display: inline-block;
   min-width: 80px;
   font-size: 16px;

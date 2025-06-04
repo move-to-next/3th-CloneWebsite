@@ -13,7 +13,7 @@ body{
 // header,
 // .slide-banner,
 // .korea-tshirts,
-.shorts-pants,
+// .shorts-pants,
 .cove-sandle,
 .nb-tshirts,
 .frozen-cloth,
@@ -106,6 +106,36 @@ section:not(.slide-banner){
         display: inline-block;
         min-width: 80px;
         font-size: 16px;
+    }
+}
+@mixin thum{
+    position: relative;
+    height: 0;
+    padding-top: 120%;
+    border-radius: 5px;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+@mixin overview{
+    margin-top: 40px;
+    &>*{
+        display: block;
+    }
+    span.name{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    span.price{
+        font-family: $num;
+        font-size: 18px;
+        font-weight: 900;
+        margin-top: 8px;
     }
 }
 
@@ -362,13 +392,12 @@ header{
     }
 }
 
-/*########### Slide-banner ###########*/
+/*########### Korea-Tshirts ###########*/
 .korea-tshirts{
     margin-top: 10vh;
     .korea-tshirts-inner{
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 40px;
         .title{
             @include title
@@ -386,38 +415,59 @@ header{
                     width: 24%;
                     cursor: pointer;
                     .thum{
-                        position: relative;
-                        height: 0;
-                        padding-top: 120%;
-                        border-radius: 5px;
-                        img{
-                            position: absolute;
-                            width: 100%;
-                            height: 100%;
-                            top: 0;
-                            left: 0;
-                            object-fit: cover;
-                        }
+                        @include thum
                     }
                     .overview{
-                        margin-top: 40px;
-                        &>*{
-                            display: block;
-                        }
-                        span.name{
-                            font-size: 18px;
-                            font-weight: 400;
-                        }
-                        span.price{
-                            font-family: $num;
-                            font-size: 18px;
-                            font-weight: 900;
-                            margin-top: 8px;
-                        }
+                        @include overview
                     }
                 }
             }
             .btn-style{
+                @include btn-style
+            }
+        }
+    }
+}
+
+/*########### Shorts-Pants ###########*/
+.shorts-pants{
+    margin-top: 10vh;
+    .shorts-pants-inner{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .title{
+            @include title
+        }
+        .contents{
+            position: relative;
+            width: 100%;
+            .shorts-pants-items{ // slick slider
+                position: relative;
+                width: 100%;
+                display: flex;
+                .slick-list{
+                    margin: 0 -12px;
+                }
+                .slick-slide{
+                    margin: 0 12px;
+                }
+                .shorts-pants-item{
+                    flex: 1;
+                    display: block;
+                    position: relative;
+                    cursor: pointer;
+                    .thum{
+                        @include thum
+                    }
+                    .overview{
+                        @include overview
+                    }
+                }
+            }
+            button.btn-style{
+                display: block;
+                margin: auto;
                 @include btn-style
             }
         }
