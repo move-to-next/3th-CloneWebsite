@@ -3,8 +3,8 @@
 @import url("//fonts.googleapis.com/earlyaccess/notosanskr.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @font-face {
-  font-family: "HakgyoansimBareondotumB";
-  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimBareondotumB.woff2") format("woff2");
-  font-weight: 700;
+  font-family: "KHNPHD";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHD.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }

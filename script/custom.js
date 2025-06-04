@@ -5,9 +5,13 @@ $(function(){
         arrows: true,
         dots: false,
         autoplay: true,
-        autoplaySpeed: 3000,
         fade: true,
         speed: 500,
-        pauseOnHover: false
+        pauseOnHover: false,
+        pauseOnFocus: false
     });
+
+    setInterval(function(){
+        $('.slide-banner-items').slick('slickPlay');
+    }, 5000);
 })
