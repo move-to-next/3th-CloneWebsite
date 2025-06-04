@@ -21,5 +21,10 @@ $(function(){
         slidesToScroll: 1
     })
 
-    
+    /* NB-Tshirts */
+    $('.nb-tshirts-items').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    })
 })
