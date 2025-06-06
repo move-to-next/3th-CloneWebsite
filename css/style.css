@@ -114,6 +114,8 @@ section:not(.slide-banner) {
 header {
   width: 100%;
   position: relative;
+  z-index: 400;
+  background-color: #fff;
 }
 header .header-menu .header-menu-sub {
   padding: 9px 0;

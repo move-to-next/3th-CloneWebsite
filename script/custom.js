@@ -60,6 +60,16 @@ $(function () {
         })
     })
 
+    /* Scroll Header Fixed */
+    $(window).scroll(function(){
+        let scrollTop = $(this).scrollTop();
+
+        if(scrollTop > 100){
+            $('header').css('position', 'fixed');
+        }else{
+            $('header').css('position', 'relative');
+        }
+    })
 
     /* Front Slider */
     $('.slide-banner-items').slick({
