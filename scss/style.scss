@@ -804,10 +804,16 @@ footer{
                                     color: $red;
                                 }
                                 &:hover::after{
-                                    color: #fff;
+                                    color: rgba(#fff, 0.5);
                                 }
                                 &:nth-child(1){
                                     color: #fff;
+                                    &:nth-child(1)::after{
+                                        color: rgba(#fff, 0.5);
+                                    }
+                                    &:hover{
+                                        color: $red;
+                                    }
                                 }
                                 &:nth-child(2){
                                     font-weight: normal;

@@ -957,10 +957,16 @@ footer .footer-inner .footer-info .footer-info-other .business .busi-info span b
   color: #cf0a2c;
 }
 footer .footer-inner .footer-info .footer-info-other .business .busi-info span b:hover::after {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
 }
 footer .footer-inner .footer-info .footer-info-other .business .busi-info span b:nth-child(1) {
   color: #fff;
+}
+footer .footer-inner .footer-info .footer-info-other .business .busi-info span b:nth-child(1):nth-child(1)::after {
+  color: rgba(255, 255, 255, 0.5);
+}
+footer .footer-inner .footer-info .footer-info-other .business .busi-info span b:nth-child(1):hover {
+  color: #cf0a2c;
 }
 footer .footer-inner .footer-info .footer-info-other .business .busi-info span b:nth-child(2) {
   font-weight: normal;
