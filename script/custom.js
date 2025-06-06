@@ -117,7 +117,6 @@ $(function () {
             $('.slick-next').css('opacity', '100%');
         }
     });
-    $('.slick-prev').css('opacity', '0%');
 
     /* Frozen-Cloth */
     $('.product-items').slick({
@@ -144,5 +143,6 @@ $(function () {
             $('.slick-next').css('opacity', '100%');
         }
     });
-    $('.slick-prev').css('opacity', '0%');
+
+    $('.slick-prev').not('.slide-banner-items .slick-prev').css('opacity', '0%');
 })
