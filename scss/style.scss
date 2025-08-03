@@ -417,6 +417,13 @@ header{
                     }
                 }
             }
+            .slick-arrow{
+                opacity: 0;
+                transition: 0.3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
         }
     }
 }
