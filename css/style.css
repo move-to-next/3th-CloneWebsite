@@ -315,8 +315,7 @@ header .mega-navi .mega-navi-inner .mega-navi-item a:hover {
   gap: 55px;
   z-index: 50;
 }
-.slide-banner .slide-banner-inner .slide-banner-items .slick-next,
-.slide-banner .slide-banner-inner .slide-banner-items .slick-prev {
+.slide-banner .slide-banner-inner .slide-banner-items .slick-arrow {
   top: 38%;
   padding: 24px;
   display: flex;
@@ -326,7 +325,11 @@ header .mega-navi .mega-navi-inner .mega-navi-item a:hover {
   border-radius: 50%;
   opacity: 70%;
   z-index: 51;
+  opacity: 0;
   transition: 0.3s;
+}
+.slide-banner .slide-banner-inner .slide-banner-items:hover .slick-arrow{
+  opacity: 1;
 }
 .slide-banner .slide-banner-inner .slide-banner-items .slick-prev {
   transform: translateX(40px);

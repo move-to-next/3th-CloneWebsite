@@ -60,6 +60,8 @@ $(function () {
         })
     })
 
+
+
     /* Scroll Header Fixed */
     $(window).scroll(function(){
         let scrollTop = $(this).scrollTop();
@@ -106,15 +108,15 @@ $(function () {
         arrows: true
     }).on('afterChange', function(event, slick, currentSlide){
         if(currentSlide === 0){
-            $('.slick-prev').css('opacity', '0%');
+            $('.nb-tshirts-items .slick-prev').css('opacity', '0%');
         } else {
-            $('.slick-prev').css('opacity', '100%');
+            $('.nb-tshirts-items .slick-prev').css('opacity', '100%');
         }
 
         if(currentSlide >= slick.slideCount - slick.options.slidesToShow){
-            $('.slick-next').css('opacity', '0%');
+            $('.nb-tshirts-items .slick-next').css('opacity', '0%');
         } else {
-            $('.slick-next').css('opacity', '100%');
+            $('.nb-tshirts-items .slick-next').css('opacity', '100%');
         }
     });
 
@@ -129,18 +131,18 @@ $(function () {
         arrows: true
     }).on('afterChange',function(event, slick, currentSlide){
         if(currentSlide === 0){
-            $('.slick-prev').css('opacity', '0%');
+            $('.product-items .slick-prev').css('opacity', '0%');
         }else{
-            $('.slick-prev').css('opacity', '100%');
+            $('.product-items .slick-prev').css('opacity', '100%');
         }
         console.log(currentSlide)
         // slick.slideCount = 9
         // slick.options.slidesToShow = 4.5
 
         if(currentSlide >= slick.slideCount - slick.options.slidesToShow){
-            $('.slick-next').css('opacity', '0%');
+            $('.product-items .slick-next').css('opacity', '0%');
         }else{
-            $('.slick-next').css('opacity', '100%');
+            $('.product-items .slick-next').css('opacity', '100%');
         }
     });
 
